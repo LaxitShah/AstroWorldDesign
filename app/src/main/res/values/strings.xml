@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AstroWorld</string>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <string name="radioFemale">Female</string>
+    <string name="radioMale">Male</string>
+
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/astro"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:src="@drawable/horoscope"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fname"
+        android:background="@drawable/bg_button"
+        android:layout_marginHorizontal="30dp"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:drawableRight="@drawable/ic_person"
+        android:layout_marginTop="20dp"
+        android:hint="    First Name   "
+        android:imeOptions="actionNext"
+        />
+    <EditText
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lname"
+        android:background="@drawable/bg_button"
+        android:layout_marginHorizontal="30dp"
+        android:padding="15dp"
+        android:drawableRight="@drawable/ic_person"
+        android:layout_marginTop="10dp"
+        android:hint="    Last  Name   "
+        android:imeOptions="actionNext"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Male"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/your_color"
+            android:textSize="20dp" />
+
+        <RadioButton
+
+            android:id="@+id/radioFemale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:buttonTint="@color/your_color"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_date"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_button"
+        android:padding="15dp"
+        android:hint="Enter your Birth Date"
+        android:textSize="20sp"
+
+        />
+
+    <android.widget.Button
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_date"
+        android:background="@drawable/calander_icon"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="7dp"
+        android:padding="0dp"
+        android:backgroundTint="@color/purple_200"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_time"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button"
+            android:padding="15dp"
+            android:hint="Enter your Birth Time"
+            android:textSize="20sp"
+            />
+
+        <android.widget.Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="50dp"
+            android:id="@+id/btn_time"
+            android:background="@drawable/clock"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+
+            android:backgroundTint="@color/teal_200"
+            />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/simpleSpinner"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_button"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        >
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingbar"
+        android:layout_marginHorizontal="20dp"
+        android:numStars="5" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:id="@+id/tv_ratingbar"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/white"
+
+        />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chb"
+            android:text="check me"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:buttonTint="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            />
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button1"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inner_bg"
+        />
+
+</LinearLayout>
+</ScrollView>
